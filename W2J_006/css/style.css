@@ -1,0 +1,96 @@
+button{
+	position: absolute;
+	right: 300px;
+	top: 100px;
+	border:2px solid rgb(2, 136, 209);
+	border-radius:15px;
+	font-family:poppins;
+	font-size:18px;
+}
+
+#contact{
+	right: 300px;
+	top: 100px;
+	color:white;
+	background:rgb(2, 136, 209);
+}
+
+#sbbi{
+	right: 400px;
+	top: 100px;
+	color:rgb(2, 136, 209);
+	background:white;
+}
+
+body{
+display: inline;
+}
+
+ul{
+list-style-type:square;
+text-align:left;
+}
+
+p{
+font-size:26px;
+text-align:left;
+}
+
+
+div{
+	display: inline;
+	font-family:poppins;
+	color:rgb(2, 136, 209);
+	background:rgba(255, 255, 255, 0.74902);
+}
+
+#tekstbox1{
+	position: absolute;
+    left: 350px;
+    top: 175px;
+	font-size:70px;
+	padding:10px 20px 10px 20px;
+	text-align:center;
+	border:2px solid rgb(2, 136, 209);
+	border-radius:25px;
+	}
+	
+#tekstbox2{
+	position: absolute;
+    left: 400px;
+    bottom: 150px;
+	font-size:24px;
+	font-weight: 500;
+	line-height:31px;
+	padding:10px 20px 10px 30px;
+	border:2px solid rgb(2, 136, 209);
+	border-radius:25px;
+	}
+	
+nav{
+	position: absolute;
+	left: 50px;
+    top: 50px;
+	}
+	
+#mainnav_ul{
+	list-style-type:none;
+	font-size:18px;
+	color:white;
+	text-align:center;
+	width:150px;
+	background:rgb(2, 136, 209);
+	border:2px solid rgb(2, 136, 209);
+	border-radius:25px;
+	}
+	
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+a, a:link {
+    color: white;
+	text-decoration: none;
+}
+
+	
