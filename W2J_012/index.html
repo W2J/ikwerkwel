@@ -2,6 +2,7 @@
 
 	-- Versie 13
 		- favicon toegevoegd
+		- buttons verwijderd
 	
 	-- Versie 12
 		- nu met links naar alle pagina's
@@ -83,7 +84,10 @@
 			</div>
 	
 			<!-- SBBI & Contact buttons --> 
-			<div class="row">
+
+			<!-- 		buttons verwijderd per 13-7. Worden vervangen door hamburgermenu - ES
+
+				<div class="row">
 				<div class="col-xs-8 col-sm-8 col-md-8"></div>
 				<div class="col-xs-1 col-sm-1 col-md-1">
 						<button type="button" class="btn btn-default btn-lg" onclick="alert('SBBI pagina nog niet klaar helaas!')">SBBI</button>	
@@ -92,7 +96,8 @@
 						<button type="button" class="btn btn-info btn-lg" onclick="alert('Contactpagina nog niet klaar helaas!')">Contact</button>
 				</div> 
 				<div class="col-xs-2 col-sm-2 col-md-2"></div>
-			</div>            
+			</div>           
+-->
 
 <!-- 1xTussenrij met vaste hoogte (4vh) -->
 			<div class="row">
@@ -143,11 +148,29 @@
 				</div>
 				<div class="col-xs-2 col-md-2"></div>
 			</div>
+</div>
 		
 	</body>
 <!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Javascript ten behoeve van tab navigatie - author:ES - -->
+<script>
+openPage("d1");
+loadContent("d1");
+function openPage(pageName) {
+    var i;
+    var x = document.getElementsByClassName("page");
+    document.body.style.backgroundImage="url('images/"+pageName+".jpg')";
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(pageName).style.display = "block"; 
+}
+</script>
+
+	
 </html>
