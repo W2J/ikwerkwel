@@ -1,5 +1,5 @@
 body { 
-  font-family:poppins;
+  font-family: 'Poppins', serif;
   color:rgb(2, 136, 209);
  }
 
@@ -13,7 +13,7 @@ body {
 		
 
 .dropdown-menu {
-	font-family:poppins;
+    font-family: 'Poppins', serif;
 	font-size: 3vh;
 	background-color:rgb(2, 136, 209);
 	color:white;
@@ -39,6 +39,30 @@ body {
 	border:.1vw solid rgb(2, 136, 209);
 	border-radius:1vw;	
 	background:white;
+}
+
+#tekstbox3{
+
+    font-family: 'Poppins', serif;
+	font-size: 4vw;
+	font-weight: bold;
+	text-align:center;
+	background:white;
+	opacity: 0.7;
+	border:.2vw solid rgb(2, 136, 209);
+	border-radius:2vw;
+	}
+	
+#tekstbox4{
+
+    font-family: 'Poppins', serif;
+	font-size: 1.6vw;
+	font-weight: bold;
+	border:.2vw solid rgb(2, 136, 209);
+	border-radius:2vw;
+    padding: 1vw 1vw 1vw 3vw;
+	background:white;
+	opacity: 0.7;
 }
 
 .btn-lg{
