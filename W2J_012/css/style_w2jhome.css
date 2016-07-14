@@ -64,6 +64,45 @@ body {
 	opacity: 0.7;
 }
 
+#tekstbox7{
+
+    font-family: 'Poppins', serif;
+	font-size: 4vw;
+	font-weight: bold;
+	text-align:center;
+	background:white;
+	opacity: 0.7;
+	border:.2vw solid rgb(2, 136, 209);
+	border-radius:2vw;
+	}
+
+
+
+#tekstbox8{
+
+    font-family: 'Poppins', serif;
+	font-size: 1.6vw;
+	font-weight: bold;
+	border:.2vw solid rgb(2, 136, 209);
+	border-radius:2vw;
+    padding: 1.5vw 1.5vw 1.5vw 4vw;
+	background:white;
+	opacity: 0.7;
+}
+
+#tekstbox9{
+
+    font-family: 'Poppins', serif;
+	font-size: 1.6vw;
+	font-weight: bold;
+	text-align:center;
+	background:white;
+	opacity: 0.7;
+	border:.2vw solid rgb(2, 136, 209);
+	border-radius:2vw;
+	padding: 1.5vw 1.5vw 1.5vw 4vw;
+	}
+
 .btn-lg{
 	padding: 1vw 1.5vw;
   font-size: 1vw;
