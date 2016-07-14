@@ -1,0 +1,23 @@
+
+
+	-- Versie 13
+		- favicon toegevoegd
+		- buttons verwijderd
+		- background responsiveness aangepast
+		- pagina 2 toegevoegd via div. tab script toegevoegd (openPage)
+	
+	-- Versie 12
+		- nu met links naar alle pagina's
+		- buttons met alert
+
+	-- Versie 11
+		- nu met link naar andere pagina
+
+	-- Versie 10
+		- kolommen in xs-, in sm- en in md-formaat om met name buttons responsive te houden in landscape
+
+	-- Versie 9
+		- eerste pagina kompleet & responsive
+		- enkel nog kolommen in xs-formaat
+		- hamburger menu in place middels Font Awesome, dus geen glyphicon, glyphicons worden nl niet meer ondersteund in Bootstrap 4, maw voorbereid op de toekomst!! 
+	
