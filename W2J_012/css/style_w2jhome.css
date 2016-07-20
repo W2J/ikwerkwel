@@ -25,19 +25,49 @@ body {
 
 	
 #tekstbox1{
-	font-size: 4vw;
+	position: absolute; 
+	overflow: visible; 
+	height: auto; 
+	width: auto;
+	white-space: normal; 
+	line-height: 4.5vw; 
+	font-weight: 700; 
+	color: rgb(2, 136, 209); 
+	padding: 1vw 2vw 1vw 2vw; 
+	border: 0.15vw solid rgb(3, 169, 244); 
+	border-radius: 1.39vw; 
+	transition: none; 
+	margin: 0px; 
+	letter-spacing: 0px; 
+	background: white;
+	opacity: 0.83; 
+	/* background-color: rgba(255, 255, 255, 0.83); */
 	text-align:center;
-	background:white;
-	border:.1vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	font-size: 3vw;
 	}
 	
 	
 #tekstbox2{
-	font-size: 1.4vw;
-	border:.1vw solid rgb(2, 136, 209);
-	border-radius:1vw;	
-	background:white;
+		position: absolute; 
+	overflow: visible; 
+	height: auto; 
+	width: auto;
+	padding: 1vw 0.5vw 1vw 2vw; 
+	border: 0.15vw solid rgb(3, 169, 244); 
+	border-radius: 1.39vw; 
+	transition: none; 
+	margin: 0px; 
+	text-align:left;
+	letter-spacing: 0px; 
+	background: white;
+	opacity: 0.83;
+	/* background-color: rgba(255, 255, 255, 0.83);*/ 
+	/*white-space: normal;*/ 
+	font-size: 1.6vw;
+	line-height: 2vw; 
+	font-weight: 570; 
+	color: rgb(2, 136, 209);
+	font-size: 1.4vw;	
 }
 
 #tekstbox3{
@@ -47,9 +77,9 @@ body {
 	font-weight: bold;
 	text-align:center;
 	background:white;
-	opacity: 0.7;
+	opacity: 0.83;
 	border:.2vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	border-radius: 1.39vw; 
 	}
 	
 #tekstbox4{
@@ -58,10 +88,10 @@ body {
 	font-size: 1.6vw;
 	font-weight: bold;
 	border:.2vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	border-radius: 1.39vw; 
     padding: 1.5vw 1.5vw 1.5vw 4vw;
 	background:white;
-	opacity: 0.7;
+	opacity: 0.83;
 }
 
 #tekstbox7{
@@ -71,9 +101,9 @@ body {
 	font-weight: bold;
 	text-align:center;
 	background:white;
-	opacity: 0.7;
+	opacity: 0.83;
 	border:.2vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	border-radius: 1.39vw; 
 	}
 
 
@@ -84,10 +114,10 @@ body {
 	font-size: 1.6vw;
 	font-weight: bold;
 	border:.2vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	border-radius: 1.39vw; 
     padding: 1.5vw 1.5vw 1.5vw 4vw;
 	background:white;
-	opacity: 0.7;
+	opacity: 0.83;
 }
 
 #tekstbox9{
@@ -97,9 +127,9 @@ body {
 	font-weight: bold;
 	text-align:center;
 	background:white;
-	opacity: 0.7;
+	opacity: 0.83;
 	border:.2vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	border-radius: 1.39vw; 
 	padding: 1.5vw 1.5vw 1.5vw 4vw;
 	}
 
@@ -110,9 +140,9 @@ body {
 	font-weight: bold;
 	text-align:center;
 	background:white;
-	opacity: 0.7;
+	opacity: 0.83;
 	border:.2vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	border-radius: 1.39vw; 
 	padding: 1.5vw 1.5vw 1.5vw 4vw;
 	}
 
@@ -122,7 +152,7 @@ body {
 	font-size: 1.6vw;
 	font-weight: bold;
 	border:.2vw solid rgb(2, 136, 209);
-	border-radius:2vw;
+	border-radius: 1.39vw; 
     padding: 1.5vw 1.5vw 1.5vw 1.5vw;
 }
 	
