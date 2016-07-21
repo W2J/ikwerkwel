@@ -1,175 +1,199 @@
 body { 
-  font-family: 'Poppins', serif;
-  color:rgb(2, 136, 209);
-  background: url("../images/d1.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat:no-repeat;
-   }
- 
-		
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url("../images/d1.jpg") no-repeat center center fixed; 
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-webkit-background-size: cover;
+	color: rgb(2, 136, 209);
+	font-family: 'Poppins', serif;
+}
+
 
 .dropdown-menu {
-    font-family: 'Poppins', serif;
+	background-color: rgb(255, 255, 255);
+	color: white;
 	font-size: 3vh;
-	background-color:rgb(255, 255, 255);
-	color:white;
+    font-family: 'Poppins', serif;
 }
+
 
 .dropdown-menu > li > a {
 	line-height: 1.25;
 	padding: 0.5vw 1vw;
 	}		
 
-.dropdown-menu > li > a:hover {
-	background-color:rgb(2, 136, 209);
+	
+.dropdown-menu > li > a: hover {
+	background-color: rgb(2, 136, 209);
 	background-image: none;	
 }
 
-#navbottom  {
+
+#navbottom {
     border-bottom: 1px solid #555;
 }
 
-#tekstbox1{
-	position: absolute; 
-	overflow: visible; 
-	height: auto; 
-	width: auto;
-	white-space: normal; 
-	line-height: 4.5vw; 
-	font-weight: 700; 
+
+#tekstbox1 {
+	background: white;
+	border-radius: 1.39vw; 
+	border: 0.15vw solid rgb(3, 169, 244); 
 	color: rgb(2, 136, 209); 
-	padding: 1vw 2vw 1vw 2vw; 
-	border: 0.15vw solid rgb(3, 169, 244); 
-	border-radius: 1.39vw; 
-	transition: none; 
-	margin: 0px; 
-	letter-spacing: 0px; 
-	background: white;
-	opacity: 0.83; 
-	/* background-color: rgba(255, 255, 255, 0.83); */
-	text-align:center;
 	font-size: 3vw;
-	}
-	
-	
-#tekstbox2{
-		position: absolute; 
-	overflow: visible; 
+	font-weight: 700; 
 	height: auto; 
-	width: auto;
-	padding: 1vw 0.5vw 1vw 2vw; 
-	border: 0.15vw solid rgb(3, 169, 244); 
-	border-radius: 1.39vw; 
-	transition: none; 
-	margin: 0px; 
-	text-align:left;
 	letter-spacing: 0px; 
+	line-height: 4.5vw; 
+	margin: 0px; 
+	opacity: 0.83; 
+	overflow: visible; 
+	padding: 1vw 2vw 1vw 2vw; 
+	position: absolute; 
+	text-align: center;
+	transition: none; 
+	white-space: normal; 
+	width: auto;
+	/* background-color: rgba(255, 255, 255, 0.83); */
+}
+	
+	
+#tekstbox2 {
 	background: white;
-	opacity: 0.83;
-	/* background-color: rgba(255, 255, 255, 0.83);*/ 
-	/*white-space: normal;*/ 
-	font-size: 1.6vw;
-	line-height: 2vw; 
-	font-weight: 570; 
+	border-radius: 1.39vw; 
+	border: 0.15vw solid rgb(3, 169, 244); 
 	color: rgb(2, 136, 209);
 	font-size: 1.4vw;	
+	font-size: 1.6vw;
+	font-weight: 570; 
+	height: auto; 
+	letter-spacing: 0px; 
+	line-height: 2vw; 
+	margin: 0px; 
+	opacity: 0.83;
+	overflow: visible; 
+	padding: 1vw 0.5vw 1vw 2vw; 
+	position: absolute; 
+	text-align: left;
+	transition: none; 
+	width: auto;
+	/* background-color: rgba(255, 255, 255, 0.83);*/ 
+	/*white-space: normal;*/
 }
 
-#tekstbox3{
 
-    font-family: 'Poppins', serif;
+#tekstbox3 {
+	background: white;
+	border-radius: 1.39vw; 
+	border: .2vw solid rgb(2, 136, 209);
 	font-size: 4vw;
 	font-weight: bold;
-	text-align:center;
-	background:white;
 	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	}
+	text-align: center;
+    font-family: 'Poppins', serif;
+}
 	
-#tekstbox4{
 
-    font-family: 'Poppins', serif;
+#tekstbox4 {
+	background: white;
+	border-radius: 1.39vw; 
+	border: .2vw solid rgb(2, 136, 209);
 	font-size: 1.6vw;
 	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-    padding: 1.5vw 1.5vw 1.5vw 4vw;
-	background:white;
 	opacity: 0.83;
+    font-family: 'Poppins', serif;
+    padding: 1.5vw 1.5vw 1.5vw 4vw;
 }
 
-#tekstbox7{
 
-    font-family: 'Poppins', serif;
+#tekstbox5 {
+	background: white;
+	border-radius: 1.39vw;
+	border: .2vw solid rgb(2, 136, 209);
 	font-size: 4vw;
 	font-weight: bold;
-	text-align:center;
-	background:white;
 	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	}
-
-
-
-#tekstbox8{
-
+	text-align: center;
     font-family: 'Poppins', serif;
+}
+	
+	
+#tekstbox6 {
+	background: white;
+	border-radius: 1.39vw;
+	border: .2vw solid rgb(2, 136, 209);
 	font-size: 1.6vw;
 	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-    padding: 1.5vw 1.5vw 1.5vw 4vw;
-	background:white;
 	opacity: 0.83;
+    font-family: 'Poppins', serif;
+    padding: 1.5vw 1.5vw 1.5vw 4vw;
 }
 
-#tekstbox9{
 
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
+#tekstbox7 {
+	background: white;
+	border-radius: 1.39vw; 
+	border: .2vw solid rgb(2, 136, 209);
+	font-size: 4vw;
 	font-weight: bold;
-	text-align:center;
-	background:white;
 	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	padding: 1.5vw 1.5vw 1.5vw 4vw;
-	}
-
-#tekstbox10{
-
+	text-align: center;
     font-family: 'Poppins', serif;
+}
+
+
+#tekstbox8 {
+	background: white;
+	border-radius: 1.39vw; 
+	border: .2vw solid rgb(2, 136, 209);
 	font-size: 1.6vw;
 	font-weight: bold;
-	text-align:center;
-	background:white;
 	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	padding: 1.5vw 1.5vw 1.5vw 4vw;
-	}
-
-#form1{
-
     font-family: 'Poppins', serif;
+    padding: 1.5vw 1.5vw 1.5vw 4vw;
+}
+
+
+#tekstbox9 {
+	background: white;
+	border-radius: 1.39vw; 
+	border: .2vw solid rgb(2, 136, 209);
 	font-size: 1.6vw;
 	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
+	opacity: 0.83;
+	padding: 1.5vw 1.5vw 1.5vw 4vw;
+	text-align: center;
+    font-family: 'Poppins', serif;
+}
+
+#tekstbox10 {
+	background: white;
 	border-radius: 1.39vw; 
+	border: .2vw solid rgb(2, 136, 209);
+	font-size: 1.6vw;
+	font-weight: bold;
+	opacity: 0.83;
+	padding: 1.5vw 1.5vw 1.5vw 4vw;
+	text-align: center;
+    font-family: 'Poppins', serif;
+}
+
+
+#form1 {
+	border-radius: 1.39vw; 
+	border: .2vw solid rgb(2, 136, 209);
+	font-size: 1.6vw;
+	font-weight: bold;
+    font-family: 'Poppins', serif;
     padding: 1.5vw 1.5vw 1.5vw 1.5vw;
 }
-	
 
-.btn-lg{
+	
+.btn-lg {
+	border-radius: 1vw;
+	font-size: 1vw;
+	line-height: 1.3333333vw;
 	padding: 1vw 1.5vw;
-  font-size: 1vw;
-  line-height: 1.3333333vw;
-  border-radius: 1vw;
 }
 	
 .btn-default {
@@ -177,10 +201,12 @@ body {
     color: rgb(2, 136, 209);
 }
 
-.btn-info{
-	color:white;
-	background:rgb(2, 136, 209);
+.btn-info {
+	background: rgb(2, 136, 209);
+	color: white;
 }
 
- .row.content {height: 4vh}
+.row.content {
+	height: 4vh;
+}
 
