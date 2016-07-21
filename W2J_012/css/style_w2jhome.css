@@ -23,11 +23,15 @@ body {
 	padding: 0.5vw 1vw;
 	}		
 
-	.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover {
 	background-color:rgb(2, 136, 209);
- background-image: none;	
+	background-image: none;	
 }
-	
+
+#navbottom  {
+    border-bottom: 1px solid #555;
+}
+
 #tekstbox1{
 	position: absolute; 
 	overflow: visible; 
