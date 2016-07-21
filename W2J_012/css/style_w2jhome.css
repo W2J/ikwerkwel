@@ -14,7 +14,7 @@ body {
 .dropdown-menu {
     font-family: 'Poppins', serif;
 	font-size: 3vh;
-	background-color:rgb(2, 136, 209);
+	background-color:rgb(255, 255, 255);
 	color:white;
 }
 
@@ -23,6 +23,10 @@ body {
 	padding: 0.5vw 1vw;
 	}		
 
+	.dropdown-menu > li > a:hover {
+	background-color:rgb(2, 136, 209);
+ background-image: none;	
+}
 	
 #tekstbox1{
 	position: absolute; 
