@@ -1,4 +1,4 @@
-	-- Versie 15 
+	-- Versie 15
 		- carrousel toegevoegd en intranet link in hamburger menu
 	-- Versie 14
 		- vierde en vijfde pagina toegevoegd
