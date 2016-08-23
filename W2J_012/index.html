@@ -1,5 +1,5 @@
 <!-- 
-versie 15:
+versie 14:
 versie informatie in versies.txt
 -->
 
@@ -28,17 +28,49 @@ versie informatie in versies.txt
 		
 		<!-- W2J versie number in titel -->
 		<!--<title>W2J_V3.3.6  v13</title>-->
-		
+
+		<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+		<script>
+		// Initialize Firebase
+		var config = {
+		apiKey: "AIzaSyAPxbWDdoRf-rbT6aU8BJ07qbEWalB5XhA",
+		authDomain: "ww-sandbox01.firebaseapp.com",
+		databaseURL: "https://ww-sandbox01.firebaseio.com",
+		storageBucket: "",
+		};
+		firebase.initializeApp(config);
+		var database = firebase.database();
+		</script>
+
+				
 		<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+	<script>
+$(document).ready(function(){
+	$("#writeButton").click(function(){
+		if ($("body").attr('contenteditable')!='true'){
+		
+		$("body").attr({contenteditable : "true"});
+		}
+		else { $("body").attr({contenteditable : "false"});
+		}
+    });
+}); 
+
+
+</script>
+	
 	</head>
 	
-	<body class="full">
+	<body class="full" id="content">
 		
+		<div id="wbdiv"><button id="writeButton"><span class="glyphicon glyphicon-edit"></span></button></div>
+		
+
 		<div id="d1" class="container-fluid page">
     <!-- Navigation -->
 			<nav>
@@ -451,6 +483,9 @@ versie informatie in versies.txt
 <!-- Javascript ten behoeve van tab navigatie - author:ES - -->
 
 
+
+
+
 <script>
 openPage("d1");
 function openPage(pageName) {
@@ -463,6 +498,29 @@ function openPage(pageName) {
     document.getElementById(pageName).style.display = "block"; 
 }
 </script>
+
+<script>
+function readHTML(){
+
+firebase.database().ref('content/html').once('value').then(function(snapshot) {
+  var content = snapshot.val();
+  document.getElementById('content').innerHTML = content['werkwel'];
+});
+}
+</script>
+
+<script>
+document.getElementById("content").addEventListener("input", function(){
+var content = document.getElementById('content').innerHTML;
+
+//var content = document.getElementById(pageName).innerHTML;
+  firebase.database().ref('content/html').set({
+    werkwel : content,
+ 
+  });
+}, false);
+</script>
+
 
 </body>	
 </html>
