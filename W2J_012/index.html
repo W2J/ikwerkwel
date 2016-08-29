@@ -1,4 +1,8 @@
 <!-- 
+versie 16: Dynamisch vullen van de inhoud van de hamburger.
+		   Toevoegen glyphicon en modal.
+		   Cosmetische aanpassingen van het script: alles wat netter onder elkaar. 
+versie 15:
 versie 14:
 versie informatie in versies.txt
 -->
@@ -10,7 +14,7 @@ versie informatie in versies.txt
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		
+
 		<!-- Favicon met werkwel logo -->
 		<link rel="icon" href="images/favicon.png">
 		
@@ -28,69 +32,42 @@ versie informatie in versies.txt
 		
 		<!-- W2J versie number in titel -->
 		<!--<title>W2J_V3.3.6  v13</title>-->
-
-		<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
-		<script>
-		// Initialize Firebase
-		var config = {
-		apiKey: "AIzaSyAPxbWDdoRf-rbT6aU8BJ07qbEWalB5XhA",
-		authDomain: "ww-sandbox01.firebaseapp.com",
-		databaseURL: "https://ww-sandbox01.firebaseio.com",
-		storageBucket: "",
-		};
-		firebase.initializeApp(config);
-		var database = firebase.database();
-		</script>
-
-				
-		<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-	<script>
-$(document).ready(function(){
-	$("#writeButton").click(function(){
-		if ($("body").attr('contenteditable')!='true'){
 		
-		$("body").attr({contenteditable : "true"});
-		}
-		else { $("body").attr({contenteditable : "false"});
-		}
-    });
-}); 
+		<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Onze (W2J) JavaScript functies -->
+    <script src="scripts/W2J_vul_modal.js"></script>
 
-</script>
-	
 	</head>
 	
-	<body class="full" id="content">
+	<body class="full">
 		
-		<div id="wbdiv"><button id="writeButton"><span class="glyphicon glyphicon-edit"></span></button></div>
-		
-
+      <!-- Modal -->      <!-- Op juiste positie zetten en juiste grootte geven, witte rand weg -->
+  <div class="modal right fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <!-- Modal content-->
+      <div id="modal-content-id" class="modal-content">
+      </div>
+    </div>
+  </div>
+ 
+ 
+<!-- Eerste pagina  -->
+    
 		<div id="d1" class="container-fluid page">
     <!-- Navigation -->
 			<nav>
 				<ul class="nav">
 					<li class="dropdown pull-right">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<span class="fa fa-bars fa-2x"></span>
-						</div>
-						<ul class="dropdown-menu">
-								<li><a href="#" onclick="openPage('d2');">Wat WerkWel doet</a></li>
-								<li><a href="#" onclick="openPage('d3');">Wat de vrijwilligers doen</a></li> 
-								<li><a href="#" onclick="openPage('d4');">Wat is WerkWel</a></li> 
-								<li id="navbottom" ><a href="#" onclick="openPage('d5');">Contact</a></li>
-								<li ><a href="#" onclick="openPage('d6');">Intranet</a></li>
-
-						</ul>
-					</li>
+              <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          </li>
 				</ul>
 			</nav>
-	
+      
 <!-- 1xTussenrij met vaste hoogte (4vh) 	 -->
 			<div class="row">
 				<div class="row content">
@@ -122,7 +99,7 @@ $(document).ready(function(){
 			</div>
 			
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3" style="height:20vw;cursor: pointer;" onclick="openPage('d5');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3" style="height:40vw;cursor: pointer;" onclick="openPage('d5');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox2"> WerkWel<br>
 							<ul>
@@ -133,7 +110,7 @@ $(document).ready(function(){
 							</ul>		
 					</div>
 				</div>
-				<div class="col-xs-2 col-sm-3 col-md-3" style="height:20vw;cursor: pointer;" onclick="openPage('d2');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3" style="height:40vw;cursor: pointer;" onclick="openPage('d2');"></div>
 			</div>
 </div>
 
@@ -146,22 +123,11 @@ $(document).ready(function(){
 			<nav>
 				<ul class="nav">
 					<li class="dropdown pull-right">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<span class="fa fa-bars fa-2x"></span>
-						</div>
-						<ul class="dropdown-menu">
-								<li><a href="#" onclick="openPage('d1');">Home</a></li>
-								<li><a href="#" onclick="openPage('d3');">Wat de vrijwilligers doen</a></li> 
-								<li><a href="#" onclick="openPage('d4');">Wat is WerkWel</a></li> 
-								<li id="navbottom" ><a href="#" onclick="openPage('d5');">Contact</a></li>
-								<li ><a href="#" onclick="openPage('d6');">Intranet</a></li>
-						</ul>
-					</li>
+              <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          </li>
 				</ul>
 			</nav>
-	
-
-
+      
 <!-- 1xTussenrij met vaste hoogte (4vh) 	 -->
 			<div class="row">
 				<div class="row content">
@@ -174,7 +140,7 @@ $(document).ready(function(){
 			<div class="row">
 				<div class="col-xs-1 col-sm-2 col-md-2"></div>
 				<div class="col-xs-10 col-sm-8 col-md-8">
-					<div id="tekstbox3"> Wat WerkWel doet</div>
+					<div id="tekstbox3" autofocus> Wat WerkWel doet</div>
 				</div>
 				<div class="col-xs-1 col-sm-2 col-md-2"></div>
 			</div>
@@ -195,7 +161,7 @@ $(document).ready(function(){
 
 <!-- Tweede tekstbox -->
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3" style="height:20vw;cursor: pointer;" onclick="openPage('d1');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3" style="height:40vw;cursor: pointer;" onclick="openPage('d1');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox4"> WerkWel biedt werkzoekenden<br>
 							<ul>
@@ -206,7 +172,7 @@ $(document).ready(function(){
 							</ul>		
 					</div>
 				</div>
-				<div class="col-xs-2 col-sm-3 col-md-3" style="height:20vw;cursor: pointer;" onclick="openPage('d3');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3" style="height:40vw;cursor: pointer;" onclick="openPage('d3');"></div>
 			</div>
 		</div>
 
@@ -218,21 +184,10 @@ $(document).ready(function(){
 			<nav>
 				<ul class="nav">
 					<li class="dropdown pull-right">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<span class="fa fa-bars fa-2x"></span>
-						</div>
-						<ul class="dropdown-menu">
-								<li><a href="#" onclick="openPage('d1');">Home</a></li>
-								<li><a href="#" onclick="openPage('d2');">Wat WerkWel doet</a></li>
-								<li><a href="#" onclick="openPage('d4');">Wat is WerkWel</a></li> 
-								<li id="navbottom" ><a href="#" onclick="openPage('d5');">Contact</a></li>
-								<li ><a href="#" onclick="openPage('d6');">Intranet</a></li>
-						</ul>
-					</li>
+              <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          </li>
 				</ul>
 			</nav>
-	
-
 
 <!-- 1xTussenrij met vaste hoogte (4vh) 	 -->
 			<div class="row">
@@ -246,7 +201,7 @@ $(document).ready(function(){
 			<div class="row">
 				<div class="col-xs-1 col-sm-2 col-md-2"></div>
 				<div class="col-xs-10 col-sm-8 col-md-8">
-					<div id="tekstbox5"> Wat de vrijwilligers doen</div>
+					<div id="tekstbox5" autofocus> Wat de vrijwilligers doen</div>
 				</div>
 				<div class="col-xs-1 col-sm-2 col-md-2"></div>
 			</div>
@@ -267,7 +222,7 @@ $(document).ready(function(){
 
 <!-- Tweede tekstbox -->
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3" style="height:20vw;cursor: pointer;" onclick="openPage('d2');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3" style="height:40vw;cursor: pointer;" onclick="openPage('d2');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox6"> Jij zal als vrijwilliger<br>
 							<ul>
@@ -277,7 +232,7 @@ $(document).ready(function(){
 							</ul>		
 					</div>
 				</div>
-				<div class="col-xs-2 col-sm-3 col-md-3" style="height:20vw;cursor: pointer;" onclick="openPage('d4');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3" style="height:40vw;cursor: pointer;" onclick="openPage('d4');"></div>
 			</div>
 		</div>
 		
@@ -289,20 +244,10 @@ $(document).ready(function(){
 			<nav>
 				<ul class="nav">
 					<li class="dropdown pull-right">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<span class="fa fa-bars fa-2x"></span>
-						</div>
-						<ul class="dropdown-menu">
-								<li><a href="#" onclick="openPage('d1');">Home</a></li>
-								<li><a href="#" onclick="openPage('d2');">Wat WerkWel doet</a></li>
-								<li><a href="#" onclick="openPage('d3');">Wat de vrijwilligers doen</a></li> 
-								<li id="navbottom" ><a href="#" onclick="openPage('d5');">Contact</a></li>
-								<li ><a href="#" onclick="openPage('d6');">Intranet</a></li>
-						</ul>
-					</li>
+              <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          </li>
 				</ul>
 			</nav>
-	
 
 
 <!-- 1xTussenrij met vaste hoogte (4vh) 	 -->
@@ -338,12 +283,12 @@ $(document).ready(function(){
 
 <!-- Tweede tekstbox -->
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3"style="height:15vw;cursor: pointer;" onclick="openPage('d3');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3"style="height:40vw;cursor: pointer;" onclick="openPage('d3');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox8">WerkWel is een stichting die zich inzet voor werkzoekende ict'ers. Dit doet WerkWel door, samen met werkzoekende ict'ers, een platform te bouwen waar vraag en aanbod van werk samenkomen.	
 					</div>
 				</div>
-				<div class="col-xs-2 col-sm-3 col-md-3" style="height:15vw;cursor: pointer;" onclick="openPage('d5');"></div>
+				<div class="col-xs-2 col-sm-3 col-md-3" style="height:40vw;cursor: pointer;" onclick="openPage('d5');"></div>
 			</div>
 		
 		
@@ -370,28 +315,17 @@ $(document).ready(function(){
 			</div>
 		</div>
 
-		<!-- Vijfde pagina  -->
+<!-- Vijfde pagina  -->
 
 		<div id="d5" class="container-fluid page">
     <!-- Navigation -->
 			<nav>
 				<ul class="nav">
 					<li class="dropdown pull-right">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<span class="fa fa-bars fa-2x"></span>
-						</div>
-						<ul class="dropdown-menu">
-								<li><a href="#" onclick="openPage('d1');">Home</a></li>
-								<li><a href="#" onclick="openPage('d2');">Wat WerkWel doet</a></li>
-								<li><a href="#" onclick="openPage('d3');">Wat de vrijwilligers doen</a></li> 
-								<li id="navbottom" ><a href="#" onclick="openPage('d5');">Contact</a></li>
-								<li ><a href="#" onclick="openPage('d6');">Intranet</a></li>
-						</ul>
-					</li>
+              <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          </li>
 				</ul>
 			</nav>
-	
-
 
 <!-- 1xTussenrij met vaste hoogte (4vh) 	 -->
 			<div class="row">
@@ -422,7 +356,7 @@ $(document).ready(function(){
 			</div>
 <!-- Eerste tekstbox -->
 			<div class="row">
-				<div id="d5" class="col-xs-2 col-sm-2 col-md-2" style="height:20vw;cursor: pointer;" onclick="openPage('d4');"></div>
+				<div id="d5" class="col-xs-2 col-sm-2 col-md-2" style="height:40vw;cursor: pointer;" onclick="openPage('d4');"></div>
 				<div class="col-xs-4 col-sm-4 col-md-4">
 					<div id="tekstbox10">
 					Wilt u meer weten over WerkWel? Wij staan u graag te woord.
@@ -451,7 +385,7 @@ $(document).ready(function(){
 					<button type="submit" name="Submit" value="Submit" class="btn btn-default">Verzenden</button>
 					</form>
 				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2" style="height:20vw;cursor: pointer;" onclick="openPage('d1');"></div>
+				<div class="col-xs-2 col-sm-2 col-md-2" style="height:60vw;cursor: pointer;" onclick="openPage('d1');"></div>
 			</div>
 		
 		</div>		
@@ -462,65 +396,51 @@ $(document).ready(function(){
 			<nav>
 				<ul class="nav">
 					<li class="dropdown pull-right">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<span class="fa fa-bars fa-2x"></span>
-						</div>
-						<ul class="dropdown-menu">
-								<li><a href="#" onclick="openPage('d1');">Home</a></li>
-								<li><a href="#" onclick="openPage('d2');">Wat WerkWel doet</a></li>
-								<li><a href="#" onclick="openPage('d3');">Wat de vrijwilligers doen</a></li> 
-								<li id="navbottom" ><a href="#" onclick="openPage('d5');">Contact</a></li>
-						</ul>
-					</li>
+              <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+          </li>
 				</ul>
 			</nav>
-
 
 			<h1 align="center" style="font-weight: bold;">Intranet</h1>
 		     <img src="images/Work_In_Progress.png" alt="work in progress" height="20%" width="20%" class="img-rounded center-block" >
 		</div>
 		
-<!-- Javascript ten behoeve van tab navigatie - author:ES - -->
-
-
-
+<!-- JavaScript tbv opbouwen Hamburgermenu - author: EO - -->
 
 
 <script>
+
+// Voorlopig wordt er gevuld vanuit een array ipv uit de database. Dit afstemmen met Edwin S, die vult, straks, textboxes ook vanuit database. 
+vulModal();
 openPage("d1");
-function openPage(pageName) {
+
+function openPage(pageName) {       // Loopje dat array doorloopt. Als i=x grijzen, anders normalen
+    $("#myModal").on('show.bs.modal', function () {
+      var x = pageName.substring(1,2);
+      var arrayNum;
+      var ul;
+      var j;
+      ah = document.getElementsByClassName("ahrefClass");
+      for (var i = 0; i < ah.length; i++)  {
+        if (i == x -1) {
+          ah[i].setAttribute("style", "background-color:white;color:black;");        
+        } else {
+          ah[i].setAttribute("style", "background-color:black;color:white;");     
+          ah[i].setAttribute("a:hover", "background-color:red; color:yellow");
+        }
+      };  // einde for loop
+    });   // einde nameless function, einde $
+    $("#myModal").modal("hide");
+    
     var i;
     var x = document.getElementsByClassName("page");
     document.body.style.backgroundImage="url('images/"+pageName+".jpg')";
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
+      x[i].style.display = "none"; 
+    };
     document.getElementById(pageName).style.display = "block"; 
-}
+} // einde function openPage
 </script>
-
-<script>
-function readHTML(){
-
-firebase.database().ref('content/html').once('value').then(function(snapshot) {
-  var content = snapshot.val();
-  document.getElementById('content').innerHTML = content['werkwel'];
-});
-}
-</script>
-
-<script>
-document.getElementById("content").addEventListener("input", function(){
-var content = document.getElementById('content').innerHTML;
-
-//var content = document.getElementById(pageName).innerHTML;
-  firebase.database().ref('content/html').set({
-    werkwel : content,
- 
-  });
-}, false);
-</script>
-
 
 </body>	
 </html>

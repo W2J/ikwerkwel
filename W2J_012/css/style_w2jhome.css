@@ -1,4 +1,4 @@
-body { 
+body	{ 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background: url("../images/d1.jpg") no-repeat center center fixed; 
@@ -7,191 +7,248 @@ body {
 		-webkit-background-size: cover;
 	color: rgb(2, 136, 209);
 	font-family: 'Poppins', serif;
-	overflow:hidden;
-   }
- 
-#d1 , #d2, #d3, #d4, #d5, #d6 {
-padding: 0vw 0vw 110vw 0vw;
+	overflow: hidden;
+}
+
+
+#d1 , #d2, #d3, #d4, #d5, #d6	{
+  padding: 0vw 0vw 110vw 0vw;
 }		
 
-.dropdown-menu {
-    font-family: 'Poppins', serif;
-	font-size: 3vh;
-	background-color:rgb(255, 255, 255);
-	color:white;
+
+.hbClass	{
+/*  background-color: black;*/
+  color: white;
+  list-style-type: none;
+  visibility: visible;
 }
 
-.dropdown-menu > li > a {
-	line-height: 1.25;
-	padding: 0.5vw 1vw;
-	}		
 
-.dropdown-menu > li > a:hover {
-	background-color:rgb(2, 136, 209);
-	background-image: none;	
+.hbClass > a : hover	{
+  background-color: white;
+  color: black;
+  background-image: none;	
 }
 
-#navbottom  {
-    border-bottom: 1px solid #555;
+
+.listClass	{
+  background-color: black;
+  color: white;
 }
 
-#tekstbox1{
 
-    font-family: 'Poppins', serif;
-	font-size: 3.4vw;
-	font-weight: bold;
-	text-align:center;
-	background:white;
-	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+.hbClass > listClass : hover	{
+  background-color: white;
+  color: black;
+}
+
+.modal.right .modal-dialog {
+		position: fixed;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
 	}
+
+		.modal.right .modal-content {
+		padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+		overflow-y: auto;
+	}
+
+	.modal.right.fade .modal-dialog {
+		right: -70vw;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+	.modal.right.fade.in .modal-dialog {
+		right: 0;
+	}
+
+/*
+#myModal	{
+  color: black;
+  font-family: 'Poppins', serif;
+  font-size: 2vh;
+  opacity: 0.83;
+  outline: none;
+  text-align: left;
+  white-space:nowrap;
+}
+*/
+#modal-content-id	{
+  background-color: black;
+  color: white;
+  font-size: 2vh;
+  white-space:nowrap;
+  }
+
+
+#modal-content-id > li {
+	padding-top: 0.8vh;
+    font-family: 'Poppins', serif;
+    font-size: 2vh;
+	}
+
+
+
+#tekstbox1	{
+  background: white;
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 3.4vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+  text-align: center;
+}
+
 	
-#tekstbox2{
-
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
-	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-    padding: 1.5vw 1.5vw 1.5vw 4vw;
-	background:white;
-	opacity: 0.83;
+#tekstbox2	{
+  background: white;
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 1.5vw 1.5vw 1.5vw 4vw;
 }
 
 
-#tekstbox3{
+#tekstbox3	{
+  background: white;
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 4vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  text-align: center;
+}
 
-    font-family: 'Poppins', serif;
-	font-size: 4vw;
-	font-weight: bold;
-	text-align:center;
-	background:white;
-	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
-	}
 	
-#tekstbox4{
-
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
-	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-    padding: 1.5vw 1.5vw 1.5vw 4vw;
-	background:white;
-	opacity: 0.83;
+#tekstbox4	{
+  background: white;
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 1.5vw 1.5vw 1.5vw 4vw;
 }
 
-#tekstbox5{
 
-    font-family: 'Poppins', serif;
-	font-size: 4vw;
-	font-weight: bold;
-	text-align:center;
-	background:white;
-	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
-	}
+#tekstbox5	{
+  background: white;
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 4vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  text-align: center;
+}
+
 	
-#tekstbox6{
-
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
-	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-    padding: 1.5vw 1.5vw 1.5vw 4vw;
-	background:white;
-	opacity: 0.83;
+#tekstbox6	{
+  border: .2vw solid rgb(2, 136, 209);
+  border-radius: 1.39vw; 
+  background: white;
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 1.5vw 1.5vw 1.5vw 4vw;
 }
 
 
-#tekstbox7{
-
-    font-family: 'Poppins', serif;
-	font-size: 4vw;
-	font-weight: bold;
-	text-align:center;
-	background:white;
-	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw;
-	padding: 0.5vw 0.5vw 0.5vw 0.5vw;	
-	}
-
-
-
-#tekstbox8{
-
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
-	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-    padding: 1.5vw 1.5vw 1.5vw 4vw;
-	background:white;
-	opacity: 0.83;
+#tekstbox7	{
+  background: white;
+  border-radius: 1.39vw;
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 4vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;	
+  text-align: center;
 }
 
-#tekstbox9{
 
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
-	font-weight: bold;
-	text-align:center;
-	background:white;
-	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	padding: 1.5vw 1.5vw 1.5vw 4vw;
-	}
+#tekstbox8	{
+  border: .2vw solid rgb(2, 136, 209);
+  border-radius: 1.39vw; 
+  background: white;
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 1.5vw 1.5vw 1.5vw 4vw;
+}
 
-#tekstbox10{
 
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
-	font-weight: bold;
-	text-align:left;
-	background:white;
-	opacity: 0.83;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-	padding: 1.7vw 1.5vw 3.5vw 4vw;
-	}
+#tekstbox9	{
+  background: white;
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 1.5vw 1.5vw 1.5vw 4vw;
+  text-align: center;
+}
 
-#form1{
 
-    font-family: 'Poppins', serif;
-	font-size: 1.6vw;
-	font-weight: bold;
-	border:.2vw solid rgb(2, 136, 209);
-	border-radius: 1.39vw; 
-    padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+#tekstbox10	{
+  background: white;
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  opacity: 0.83;
+  padding: 1.7vw 1.5vw 3.5vw 4vw;
+  text-align: left;
+}
+
+
+#form1	{
+  border-radius: 1.39vw; 
+  border: .2vw solid rgb(2, 136, 209);
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  padding: 1.5vw 1.5vw 1.5vw 1.5vw;
 }
 	
 
-.btn-lg{
-	padding: 1vw 1.5vw;
+.btn-lg	{
+  border-radius: 1vw;
   font-size: 1vw;
   line-height: 1.3333333vw;
-  border-radius: 1vw;
-}
-	
-.btn-default {
-    background: white;
-    color: rgb(2, 136, 209);
+  padding: 1vw 1.5vw;
 }
 
-.btn-info{
-	color:white;
-	background:rgb(2, 136, 209);
+
+/* De verzendbutton in d5 Contact */	
+.btn-default	{
+  background: white;
+  color: rgb(2, 136, 209);
 }
 
- .row.content {height: 4vh}
 
+/* De hamburger glyphicon */
+.btn-info	{
+  background: rgb(2, 136, 209);
+  color: white;
+}
+
+
+.row.content	{height: 4vh}
