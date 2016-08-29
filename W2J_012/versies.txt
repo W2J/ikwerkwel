@@ -1,3 +1,7 @@
+	-- Versie 16
+		- Hamburger menu aangepast met modal funktie
+		- Contactformulier verbonden met Google engine app/database
+
 	-- Versie 15
 		- carrousel toegevoegd en intranet link in hamburger menu
 	-- Versie 14
