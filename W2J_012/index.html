@@ -37,6 +37,24 @@ versie 16: versie informatie in versies.txt
     <!-- Onze (W2J) JavaScript functies -->
     <script src="scripts/W2J_vul_modal.js"></script>
 
+	    <!-- Initialiseren firebase tbv text parsing en CMS -->
+	
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+
+		<script>
+		// Initialize Firebase
+		var config = {
+		apiKey: "AIzaSyAPxbWDdoRf-rbT6aU8BJ07qbEWalB5XhA",
+		authDomain: "ww-sandbox01.firebaseapp.com",
+		databaseURL: "https://ww-sandbox01.firebaseio.com",
+		storageBucket: "",
+		};
+		firebase.initializeApp(config);
+		var database = firebase.database();
+		
+		</script>
+
+	
 	</head>
 	
 	<body class="full">
@@ -397,8 +415,21 @@ function openPage(pageName) {       // Loopje dat array doorloopt. Als i=x grijz
       x[i].style.display = "none"; 
     };
     document.getElementById(pageName).style.display = "block"; 
+	readHTML(pageName);
 } // einde function openPage
 </script>
+
+<script>
+window.onload = function() {readHTML('d1');}
+
+function readHTML(pageName){
+firebase.database().ref('content/html').once('value').then(function(snapshot) {
+  var content = snapshot.val();
+  document.getElementById(pageName).innerHTML = content[pageName];
+});
+}
+</script>
+
 
 </body>	
 </html>
