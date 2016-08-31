@@ -1,4 +1,14 @@
-var menuPaginas = ["Samen Werken aan een ideëel doel", "Wat WerkWel doet", "Wat de vrijwilligers doen", "Wat is WerkWel", "Contact", "Intranet" ];
+var menuPaginas=[];
+function vul_menuPaginas()  {
+  var qq = document.getElementsByClassName("txtName");
+  var rr;
+  for (var i = 0; i < qq.length ; i++) {
+    rr = qq[i].innerText;
+    menuPaginas.push(rr);
+  }
+  menuPaginas.push("Contact");
+  menuPaginas.push("Intranet");
+}
 
 
 function vulModal()  {
@@ -25,4 +35,4 @@ function vulModal()  {
     li.setAttribute("class", "hbClass");
     ul.appendChild(li);
   }
-}  
+}
