@@ -227,7 +227,83 @@ body	{
   font-weight: bold;
   padding: 1.5vw 1.5vw 1.5vw 1.5vw;
 }
-	
+
+#navleft_d1
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d1
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navleft_d2
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d2
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navleft_d3
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d3
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navleft_d4
+{
+	height:15vw;
+	cursor: pointer;
+}
+
+#navright_d4
+{
+	height:15vw;
+	cursor: pointer;
+}
+
+#navleft_d5
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d5
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navleft_d6
+{
+	height:60vw;
+	cursor: pointer;
+}
+
+#navright_d6
+{
+	height:60vw;
+	cursor: pointer;
+}
+
+#intranet
+{
+	font-weight: bold;
+}
 
 .btn-lg	{
   border-radius: 1vw;
