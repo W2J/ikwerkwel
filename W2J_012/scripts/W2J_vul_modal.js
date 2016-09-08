@@ -11,7 +11,8 @@ function vulModal()  {
     var li = document.createElement("li");
     var ahref = document.createElement("a");
     var lineBreak = document.createElement("br");
-    var pageTitle = (i + 1) + " - " + menuPaginas[i];
+//    var pageTitle = (i + 1) + " - " + menuPaginas[i];
+	var pageTitle = menuPaginas[i];
     ahref.appendChild(document.createTextNode(pageTitle));
     ahref.appendChild(lineBreak);
     ahref.setAttribute("href", "#");
@@ -25,4 +26,4 @@ function vulModal()  {
     li.setAttribute("class", "hbClass");
     ul.appendChild(li);
   }
-}  
+}
