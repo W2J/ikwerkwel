@@ -273,7 +273,8 @@ body	{
 }
 .social {
   position: fixed;
-  top: 10%;
+  top: 15%;
+  z-index:999;
 }
 .social ul {
   padding: 0px;
@@ -309,6 +310,7 @@ body	{
 }
 .social ul li:hover a {
   color: #000;
+   text-decoration: none;
 }
 .social ul li :hover i {
   color: #FF0000;
