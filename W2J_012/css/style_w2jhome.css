@@ -19,9 +19,10 @@ body	{
 .hbClass	{
 /*  background-color: black;*/
   color: white;
-  list-style-type: none;
+  list-style-type: disc;
   visibility: visible;
 }
+
 
 .hbClass > a : hover	{
   background-color: white;
@@ -43,6 +44,7 @@ body	{
 
 .modal.right .modal-dialog {
 		position: fixed;
+		width:33%;
 		-webkit-transform: translate3d(0%, 0, 0);
 		    -ms-transform: translate3d(0%, 0, 0);
 		     -o-transform: translate3d(0%, 0, 0);
@@ -52,6 +54,7 @@ body	{
 		.modal.right .modal-content {
 		padding: 0.5vw 1.5vw 0.5vw 1.5vw;
 		overflow-y: auto;
+				
 	}
 
 	.modal.right.fade .modal-dialog {
@@ -61,8 +64,10 @@ body	{
 		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
 		        transition: opacity 0.3s linear, right 0.3s ease-out;
 	}
+	
+
 	.modal.right.fade.in .modal-dialog {
-		right: 0;
+		right: 0vw;
 	}
 
 /*
@@ -79,7 +84,6 @@ body	{
 #modal-content-id	{
   background-color: black;
   color: white;
-  font-size: 2vh;
   white-space:nowrap;
   }
 
@@ -87,8 +91,10 @@ body	{
 #modal-content-id > li {
 	padding-top: 0.8vh;
     font-family: 'Poppins', serif;
-    font-size: 2vh;
+    font-size: 1.3vw;
 	}
+
+
 
 #tekstbox1	{
   background: white;
@@ -224,13 +230,91 @@ body	{
   font-weight: bold;
   padding: 1.5vw 1.5vw 1.5vw 1.5vw;
 }
-	
+
+#navleft_d1
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d1
+{
+	height:40vw;
+	cursor: pointer;
+
+}
+
+#navleft_d2
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d2
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navleft_d3
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d3
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navleft_d4
+{
+	height:15vw;
+	cursor: pointer;
+}
+
+#navright_d4
+{
+	height:15vw;
+	cursor: pointer;
+}
+
+#navleft_d5
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navright_d5
+{
+	height:40vw;
+	cursor: pointer;
+}
+
+#navleft_d6
+{
+	height:60vw;
+	cursor: pointer;
+}
+
+#navright_d6
+{
+	height:60vw;
+	cursor: pointer;
+}
+
+#intranet
+{
+	font-weight: bold;
+}
 
 .btn-lg	{
   border-radius: 1vw;
-  font-size: 1vw;
+  font-size: 1.4vw;
   line-height: 1.3333333vw;
-  padding: 1vw 1.5vw;
+  padding: 0.9vw 1.4vw;
+  outline: none;
 }
 
 
@@ -245,100 +329,21 @@ body	{
 .btn-info	{
   background: rgb(2, 136, 209);
   color: white;
+  }
+
+/* css om de dotted outline te verwijderen die verscheen zodra het hamburger menu geopend werd. */
+a, a:active, a:focus, 
+button, button:focus, button:active, 
+.btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline: none;
+    outline: 0;
 }
 
+input::-moz-focus-inner {
+    border: 0;
+}
+
+/* einde css om de dotted outline te verwijderen die verscheen zodra het hamburger menu geopend werd. */
 
 .row.content	{height: 4vh}
 
-/* social media buttons */ 
-/*a {
-  color: #fff;
-  text-decoration: none;
-}*/
-.me {
-  width: 400px;
-  margin: 90px auto;
-}
-.me p,
-.me h1 {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-}
-.me p {
-  font-weight: 200;
-}
-.me span {
-  font-weight: bold;
-}
-.social {
-  position: fixed;
-  top: 10%;
-}
-.social ul {
-  padding: 0px;
-  -webkit-transform: translate(-260px, 0);
-  -moz-transform: translate(-260px, 0);
-  -ms-transform: translate(-260px, 0);
-  -o-transform: translate(-260px, 0);
-  transform: translate(-260px, 0);
-}
-.social ul li {
-  display: block;
-  margin: 5px;
-  background: rgba(0, 0, 0, 0.36);
-  width: 300px;
-  text-align: right;
-  padding: 10px;
-  -webkit-border-radius: 0 30px 30px 0;
-  -moz-border-radius: 0 30px 30px 0;
-  border-radius: 0 30px 30px 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-.social ul li:hover {
-  -webkit-transform: translate(110px, 0);
-  -moz-transform: translate(110px, 0);
-  -ms-transform: translate(110px, 0);
-  -o-transform: translate(110px, 0);
-  transform: translate(110px, 0);
-  background: rgba(255, 255, 255, 0.4);
-}
-.social ul li:hover a {
-  color: #000;
-}
-.social ul li :hover i {
-  color: #FF0000;
-  background: white;
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-.social ul li i {
-  margin-left: 10px;
-  color: rgb(2, 136, 209);
-  background: green;
-  padding: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  font-size: 18px;
-  background: #ffffff;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
