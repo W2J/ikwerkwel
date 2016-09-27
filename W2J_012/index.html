@@ -423,11 +423,11 @@ function openPage(pageName) {       // Loopje dat array doorloopt. Als i=x grijz
 window.onload = function() {readHTML('d1');}
 
 function readHTML(pageName){
-if {firebase.database().ref('content/html').once('value').then(function(snapshot) {
+firebase.database().ref('content/html').once('value').then(function(snapshot) {
   var content = snapshot.val();
   document.getElementById(pageName).innerHTML = content[pageName];
 });
-}}else {};
+}
 </script>
 
 

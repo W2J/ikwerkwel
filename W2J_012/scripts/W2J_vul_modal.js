@@ -1,4 +1,4 @@
-var menuPaginas = ["Samen Werken aan een ideëel doel", "Wat WerkWel doet", "Wat de vrijwilligers doen", "Wat is WerkWel", "Contact", "Intranet" ];
+﻿var menuPaginas = ["Samen Werken aan een ideëel doel", "Wat WerkWel doet", "Wat de vrijwilligers doen", "Wat is WerkWel", "Contact" ];
 
 
 function vulModal()  {
