@@ -39,20 +39,18 @@ versie 16: versie informatie in versies.txt
 
 	    <!-- Initialiseren firebase tbv text parsing en CMS -->
 	
-	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
-
-		<script>
-		// Initialize Firebase
-		var config = {
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
 		apiKey: "AIzaSyAPxbWDdoRf-rbT6aU8BJ07qbEWalB5XhA",
 		authDomain: "ww-sandbox01.firebaseapp.com",
 		databaseURL: "https://ww-sandbox01.firebaseio.com",
-		storageBucket: "",
-		};
-		firebase.initializeApp(config);
-		var database = firebase.database();
-		
-		</script>
+		storageBucket: "ww-sandbox01.appspot.com",
+		messagingSenderId: "1030327527182"
+	};
+  firebase.initializeApp(config);
+</script>
 
 	
 	</head>
@@ -95,7 +93,7 @@ versie 16: versie informatie in versies.txt
 			<div class="row">
 				<div class="col-xs-1 col-sm-2 col-md-2"></div>
 				<div class="col-xs-10 col-sm-8 col-md-8">
-					<div id="tekstbox1"> Samen Werken aan een ideëel doel</div>
+					<div id="tekstbox1"> Samen .Werken aan een ideëel doel</div>
 				</div>
 				<div class="col-xs-1 col-sm-2 col-md-2"></div>
 			</div>
@@ -415,7 +413,7 @@ function openPage(pageName) {       // Loopje dat array doorloopt. Als i=x grijz
       x[i].style.display = "none"; 
     };
     document.getElementById(pageName).style.display = "block"; 
-	window.onload = function() {readHTML(pageName)};
+	window.onload = function() {readHTML(pageName); };
 } // einde function openPage
 </script>
 
@@ -423,10 +421,19 @@ function openPage(pageName) {       // Loopje dat array doorloopt. Als i=x grijz
 window.onload = function() {readHTML('d1');}
 
 function readHTML(pageName){
+
+var enableDB='True';
+
+if (enableDB==='True'){
 firebase.database().ref('content/html').once('value').then(function(snapshot) {
   var content = snapshot.val();
   document.getElementById(pageName).innerHTML = content[pageName];
+  console.log('Firebase enabled');
 });
+} 
+else {
+console.log('Firebase disabled');
+}
 }
 </script>
 
