@@ -39,20 +39,18 @@ versie 16: versie informatie in versies.txt
 
 	    <!-- Initialiseren firebase tbv text parsing en CMS -->
 	
-	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
-
-		<script>
-		// Initialize Firebase
-		var config = {
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
 		apiKey: "AIzaSyAPxbWDdoRf-rbT6aU8BJ07qbEWalB5XhA",
 		authDomain: "ww-sandbox01.firebaseapp.com",
 		databaseURL: "https://ww-sandbox01.firebaseio.com",
-		storageBucket: "",
-		};
-		firebase.initializeApp(config);
-		var database = firebase.database();
-		
-		</script>
+		storageBucket: "ww-sandbox01.appspot.com",
+		messagingSenderId: "1030327527182"
+	};
+  firebase.initializeApp(config);
+</script>
 
 	
 	</head>
@@ -79,6 +77,17 @@ versie 16: versie informatie in versies.txt
 			</ul>
 		</nav>
 	</div>
+	
+	  <!-- social media buttons -->
+	<div class="social">
+          <ul>
+              <li><a href="http://www.twitter.com/intent/tweet?url=URL_HERE&via=werkwel&text=Check deze site! www.ikwerkwel.nl" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
+              <li><a href="http://www.facebook.com/sharer/sharer.php?u=www.werkwel.nl" target="_blank">Facebook <i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=www.werkwel.nl&title=&summary=&source=" target="_blank" >Linkedin <i class="fa fa-linkedin"></i></a></li>
+              <li><a onclick="openPage('d5');">E-mail <i class="fa fa-envelope"></i></a></li>
+           </ul>
+	</div> 
+	
  
 <!-- Eerste pagina  -->
     
@@ -115,7 +124,8 @@ versie 16: versie informatie in versies.txt
 			</div>
 			
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3" id="navleft_d1" onclick="openPage('d5');"></div>
+				<div class="col-xs-1 col-sm-1 col-md-1"></div>
+				<div class="col-xs-1 col-sm-2 col-md-2" id="navleft_d1" onclick="openPage('d5');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox2"> WerkWel<br>
 							<ul>
@@ -169,7 +179,8 @@ versie 16: versie informatie in versies.txt
 
 <!-- Tweede tekstbox -->
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3" id="navleft_d2" onclick="openPage('d1');"></div>
+				<div class="col-xs-1 col-sm-1 col-md-1"></div>
+				<div class="col-xs-1 col-sm-2 col-md-2" id="navleft_d2" onclick="openPage('d1');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox4"> WerkWel biedt werkzoekenden<br>
 							<ul>
@@ -222,7 +233,8 @@ versie 16: versie informatie in versies.txt
 
 <!-- Tweede tekstbox -->
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3" id="navleft_d3" onclick="openPage('d2');"></div>
+				<div class="col-xs-1 col-sm-1 col-md-1"></div>
+				<div class="col-xs-1 col-sm-2 col-md-2" id="navleft_d3" onclick="openPage('d2');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox6"> Jij zal als vrijwilliger<br>
 							<ul>
@@ -274,7 +286,8 @@ versie 16: versie informatie in versies.txt
 
 <!-- Tweede tekstbox -->
 			<div class="row">
-				<div class="col-xs-2 col-sm-3 col-md-3" id="navleft_d4" onclick="openPage('d3');"></div>
+				<div class="col-xs-1 col-sm-1 col-md-1"></div>
+				<div class="col-xs-1 col-sm-2 col-md-2" id="navleft_d4" onclick="openPage('d3');"></div>
 				<div class="col-xs-8 col-sm-6 col-md-6">
 					<div id="tekstbox8">WerkWel is een stichting die zich inzet voor werkzoekende ict'ers. Dit doet WerkWel door, samen met werkzoekende ict'ers, een platform te bouwen waar vraag en aanbod van werk samenkomen.	
 					</div>
@@ -340,7 +353,8 @@ versie 16: versie informatie in versies.txt
 			</div>
 <!-- Eerste tekstbox -->
 			<div class="row">
-				<div class="col-xs-2 col-sm-2 col-md-2" id="navleft_d5" onclick="openPage('d4');"></div>
+				<div class="col-xs-1 col-sm-1 col-md-1"></div>
+				<div class="col-xs-1 col-sm-1 col-md-1" id="navleft_d5" onclick="openPage('d4');"></div>
 				<div class="col-xs-4 col-sm-4 col-md-4">
 					<div id="tekstbox10">
 					Wilt u meer weten over WerkWel? Wij staan u graag te woord.
@@ -415,7 +429,7 @@ function openPage(pageName) {       // Loopje dat array doorloopt. Als i=x grijz
       x[i].style.display = "none"; 
     };
     document.getElementById(pageName).style.display = "block"; 
-	window.onload = function() {readHTML(pageName)};
+	window.onload = function() {readHTML(pageName); };
 } // einde function openPage
 </script>
 
@@ -423,10 +437,19 @@ function openPage(pageName) {       // Loopje dat array doorloopt. Als i=x grijz
 window.onload = function() {readHTML('d1');}
 
 function readHTML(pageName){
+
+var enableDB='False';
+
+if (enableDB==='True'){
 firebase.database().ref('content/html').once('value').then(function(snapshot) {
   var content = snapshot.val();
   document.getElementById(pageName).innerHTML = content[pageName];
+  console.log('Firebase enabled');
 });
+} 
+else {
+console.log('Firebase disabled');
+}
 }
 </script>
 
